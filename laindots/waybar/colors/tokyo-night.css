@@ -1,0 +1,42 @@
+/* ========================= */
+/*     Tokyo Night Storm     */
+/* ========================= */
+
+/* Backgrounds */
+@define-color bg0      #1a1b26;
+@define-color bg1      #1f2335;
+@define-color bg2      #24283b;
+@define-color bg3      #292e42;
+@define-color bg4      #414868;
+
+/* Foreground */
+@define-color fg       #c0caf5;
+@define-color fg_dark  #a9b1d6;
+@define-color fg_dim   #9aa5ce;
+
+/* Reds */
+@define-color red      #f7768e;
+@define-color red2     #db4b4b;
+
+/* Orange / Yellow */
+@define-color orange   #ff9e64;
+@define-color yellow   #e0af68;
+
+/* Greens */
+@define-color green    #9ece6a;
+@define-color teal     #73daca;
+
+/* Blues */
+@define-color blue     #7aa2f7;
+@define-color cyan     #7dcfff;
+@define-color sky      #89ddff;
+
+/* Purple */
+@define-color purple   #bb9af7;
+@define-color magenta  #c678dd;
+
+/* UI */
+@define-color border   #3b4261;
+@define-color surface  #2f3549;
+@define-color overlay  #444b6a;
+@define-color shadow   #16161e;

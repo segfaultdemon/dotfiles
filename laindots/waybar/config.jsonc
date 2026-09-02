@@ -1,0 +1,110 @@
+{
+    "layer": "top",
+    "position": "left",
+    "width": 42,
+    "margin-top": 8,
+    "margin-bottom": 8,
+    "margin-left": 8,
+    "spacing": 8,
+
+    // Top
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces"
+    ],
+
+    // Center
+    "modules-center": [
+        "clock"
+    ],
+
+    // Bottom
+    "modules-right": [
+        "custom/notification",
+        "pulseaudio",
+        "battery",
+        "network",
+        "bluetooth",
+        "custom/power"
+    ],
+
+    "custom/launcher": {
+        "format": "",
+        "on-click": "kitty sh -c 'fastfetch; exec $SHELL'",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "default": "●",
+            "active": "●",
+            "urgent": "󰗖"
+        }
+    },
+
+    "clock": {
+        "format": "{:%H\n%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "󱅫",
+            "none": "󰂜",
+            "dnd-notification": "󰂵",
+            "dnd-none": "󰪑",
+            "inhibited-notification": "󱅫",
+            "inhibited-none": "󰂜",
+            "dnd-inhibited-notification": "󰂵",
+            "dnd-inhibited-none": "󰪑"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "tooltip-format": "Volume: {volume}%",
+        "on-click": "pavucontrol"
+    },
+
+    "battery": {
+        "interval": 60,
+        "format": "{icon}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip-format": "Battery: {capacity}%"
+    },
+
+    "network": {
+        "format-wifi": "󰤨",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰤭",
+        "tooltip-format": "{essid} ({signalStrength}%)"
+    },
+
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "",
+        "format-connected": "",
+        "tooltip-format-connected": "{device_alias}",
+        "on-click": "blueman-manager"
+    },
+
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout || shutdown now",
+        "tooltip": false
+    }
+}

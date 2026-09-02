@@ -1,0 +1,39 @@
+@define-color bg_dim      #181616;
+@define-color bg0         #0d0c0c;
+@define-color bg1         #12120f;
+@define-color bg2         #1d1c19;
+@define-color bg3         #282727;
+@define-color bg4         #393836;
+
+@define-color fg          #c5c9c5;
+@define-color fg_dim      #a6a69c;
+@define-color fg_dark     #727169;
+
+/* Reds */
+@define-color red         #c4746e;
+@define-color red_dark    #b35b79;
+
+/* Orange / Gold */
+@define-color orange      #b6927b;
+@define-color gold        #c4b28a;
+@define-color yellow      #c4b28a;
+
+/* Greens */
+@define-color green       #8a9a7b;
+@define-color emerald     #87a987;
+
+/* Blues */
+@define-color blue        #8ba4b0;
+@define-color cyan        #8ea4a2;
+@define-color aqua        #7aa89f;
+
+/* Purple */
+@define-color purple      #8992a7;
+@define-color violet      #938aa9;
+@define-color pink        #a292a3;
+
+/* UI */
+@define-color border      #54546d;
+@define-color surface     #2d2a2e;
+@define-color overlay     #393836;
+@define-color shadow      #0d0c0c;

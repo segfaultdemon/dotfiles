@@ -1,0 +1,36 @@
+/* ========================= */
+/*      Cyberdream Theme     */
+/* ========================= */
+
+/* Backgrounds */
+@define-color bg0       rgb(10, 11, 16);
+@define-color bg1       rgb(17, 19, 26);
+@define-color bg2       rgb(23, 26, 34);
+@define-color bg3       rgb(32, 36, 47);
+@define-color bg4       rgb(43, 49, 64);
+
+/* Foreground */
+@define-color fg        rgb(229, 241, 255);
+@define-color fg_dim    rgb(185, 200, 221);
+@define-color fg_dark   rgb(125, 140, 163);
+
+/* Accents */
+@define-color cyan      rgb(94, 241, 255);
+@define-color blue      rgb(108, 182, 255);
+@define-color green     rgb(94, 255, 138);
+@define-color lime      rgb(195, 255, 107);
+@define-color yellow    rgb(255, 230, 109);
+@define-color orange    rgb(255, 184, 108);
+@define-color red       rgb(255, 107, 129);
+@define-color magenta   rgb(255, 94, 160);
+@define-color purple    rgb(189, 94, 255);
+
+/* UI */
+@define-color border    rgb(54, 64, 85);
+@define-color surface   rgb(24, 28, 37);
+@define-color overlay   rgb(35, 41, 56);
+@define-color shadow    rgb(5, 6, 8);
+/* Effects */
+@define-color hover     rgba(94,241,255,0.12);
+@define-color active    rgba(94,241,255,0.18);
+@define-color glow      rgba(94,241,255,0.28);

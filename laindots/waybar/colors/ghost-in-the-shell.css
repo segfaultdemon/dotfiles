@@ -1,0 +1,23 @@
+/* Backgrounds */
+@define-color bg0       #07090d;
+@define-color bg1       #0d1118;
+@define-color bg2       #151b25;
+@define-color bg3       #1d2531;
+@define-color bg4       #293343;
+
+/* Text */
+@define-color fg        #edf2f7;
+@define-color fg_dim    #aab7c9;
+@define-color fg_dark   #76839b;
+
+/* Accents */
+@define-color cyan      #59d9ff;
+@define-color green     #58ff70;
+@define-color red       #d9576f;
+@define-color gold      #c2a84a;
+@define-color violet    #8167d9;
+
+/* UI */
+@define-color surface   #11161f;
+@define-color border    #2b3648;
+@define-color shadow    #030406;

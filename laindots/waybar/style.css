@@ -1,0 +1,118 @@
+* {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    background-color: transparent;
+}
+
+window#waybar > box {
+    background-color: #0F120B;
+    border: 1px solid #3F4E2F;
+    border-radius: 20px;
+    color: #D6DCAC;
+    padding: 4px 0;
+}
+
+/* Arch Icon */
+#custom-launcher {
+    font-size: 20px;
+    color: #A2B070;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    padding: 0;
+}
+
+/* Workspace Mini Island (Top) */
+#workspaces {
+    background-color: #1E2616;
+    border: 1px solid #3F4E2F;
+    border-radius: 14px;
+    padding: 6px 0;
+    margin: 0 5px;
+}
+
+window#waybar #workspaces button,
+window#waybar #workspaces button:hover,
+window#waybar #workspaces button:active,
+window#waybar #workspaces button:focus,
+window#waybar #workspaces button.active,
+window#waybar #workspaces button.active:hover {
+    background: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    outline: none;
+}
+
+#workspaces button {
+    color: #525C40;
+    font-size: 8px;
+    padding: 2px 0;
+    transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+    color: #D6DCAC;
+    font-size: 15px;
+}
+
+#workspaces button:hover {
+    color: #A2B070;
+}
+
+/* Clock (Center - Enlarged) */
+#clock {
+    font-weight: bold;
+    font-size: 17px;
+    color: #D6DCAC;
+    margin: 6px 0;
+}
+
+/* Bottom Modules */
+#custom-notification {
+    margin: 4px 0;
+    color: #A2B070;
+    font-size: 15px;
+}
+
+#pulseaudio,
+#bluetooth {
+    margin: 4px 0;
+    color: #A2B070;
+    font-size: 15px;
+}
+
+#network {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-right: 4px;
+    color: #A2B070;
+    font-size: 15px;
+}
+
+#battery {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-left:2px;
+    color: #A2B070;
+    font-size: 15px;
+}
+
+#custom-power {
+    color: #8B3A3A;
+    margin-bottom: 8px;
+    margin-top: 4px;
+    font-size: 15px;
+}

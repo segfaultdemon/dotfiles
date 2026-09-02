@@ -1,0 +1,78 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+format = """
+$cmd_duration $directory$git_branch
+  $character"""
+
+# Prompt character (Success: Sage Green, Error: Rust Red)
+[character]
+success_symbol = "[ ](bold fg:#A2B070)"
+error_symbol = "[ ](bold fg:#8B3A3A)"
+
+[package]
+disabled = true
+
+# Command Duration Pill
+[cmd_duration]
+min_time = 0
+format = '[](fg:#3F4E2F)[󰪢 $duration](bg:#3F4E2F fg:#D6DCAC)[](fg:#3F4E2F)'
+
+# Directory Pill
+[directory]
+home_symbol = " "
+read_only = "  "
+style = "bg:#1E2616 fg:#D6DCAC"
+truncation_length = 2
+truncation_symbol = ".../"
+format = '[](fg:#1E2616)[󰉋 → $path]($style)[](fg:#1E2616)'
+
+[directory.substitutions]
+"Desktop" = "  "
+"Documents" = "  "
+"Downloads" = "  "
+"Music" = " 󰎈 "
+"Pictures" = "  "
+"Videos" = "  "
+"GitHub" = " 󰊤 "
+
+# Git Branch Pill
+[git_branch]
+symbol = "󰘬"
+truncation_length = 12
+truncation_symbol = ""
+style = "bg:#A2B070 fg:#0F120B"
+format = " [](fg:#A2B070)[󰜥 $symbol $branch(:$remote_branch)]($style)[](fg:#A2B070)"
+
+# Git Status & State
+[git_commit]
+commit_hash_length = 4
+tag_symbol = " "
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold fg:#8B3A3A)"
+
+[git_status]
+conflicted = " 🏳 "
+ahead = " 🏎💨 "
+behind = " 😰 "
+diverged = " 😵 "
+untracked = " 🤷 "
+stashed = " 📦 "
+modified = " 📝 "
+staged = '[++\($count\)](fg:#A2B070)'
+renamed = " ✍️ "
+deleted = " 🗑 "
+
+# Optional User & Host Modules (Pill Styled)
+[username]
+style_user = "bg:#3F4E2F fg:#D6DCAC"
+style_root = "bg:#8B3A3A fg:#D6DCAC"
+format = "[](fg:#3F4E2F)[$user]($style)"
+disabled = true
+
+[hostname]
+ssh_only = false
+format = "[•$hostname](bg:#3F4E2F bold fg:#D6DCAC)[](fg:#3F4E2F)"
+disabled = true
