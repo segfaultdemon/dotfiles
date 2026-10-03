@@ -1,0 +1,7 @@
+v 4
+file . "ex2.vhd" "412f50d3a1873e34f40d4d7d1acb3d268625e206" "20260921095859.010":
+  entity top at 2( 10) + 0 on 21;
+  architecture beh of top at 13( 181) + 0 on 22;
+file . "ex_mux.vhd" "7a6110464b1c7e9b5052f57b403f264f71ea3d35" "20260918134805.313":
+  entity mux_2b_sel at 4( 15) + 0 on 15;
+  architecture mux of mux_2b_sel at 16( 212) + 0 on 16;
