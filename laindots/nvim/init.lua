@@ -1,5 +1,7 @@
 vim.opt.termguicolors = true
-vim.cmd.colorscheme("habamax")
+vim.cmd.colorscheme("catppuccin")
+--vim.api.nvim_set_hl(0, "Normal", { bg = "#0F120B" }) -- Set background
+-- catpuccin, desert, lunaperche, miniautumn, minispring
 
 local function set_transparent() -- set UI component to transparent
 	local groups = {
